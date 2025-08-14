@@ -37,7 +37,7 @@ rmmod clevo_wmi
 rmmod tuxedo_io
 rmmod tuxedo_keyboard
 rm /etc/modprobe.d/tuxedo_keyboard.conf
-git https://github.com/linuxgamer/clevo-keyboard/blob/master
+git https://github.com/linuxgamer/clevo-keyboard
 cd clevo-keyboard/
 make clean
 cd src
