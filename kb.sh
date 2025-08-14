@@ -15,8 +15,8 @@ install_packages() {
     apt update && apt install -y git dkms build-essential linux-headers-$(uname -r)
   elif [ -f /etc/redhat-release ]; then
     echo "Detected Fedora/RHEL/CentOS or derivative"
-    dnf -y group install "C Development Tools and Libraries"
-    dnf -y group install "Development Tools"
+    dnf -y group install "c-development"
+    dnf -y group install "development-tools"
     dnf -y install git dkms kernel-headers kernel-devel
   elif [[ "$(lsb_release -si)" == "openSUSE" ]]; then
     echo "Detected openSUSE"
@@ -37,7 +37,7 @@ rmmod clevo_wmi
 rmmod tuxedo_io
 rmmod tuxedo_keyboard
 rm /etc/modprobe.d/tuxedo_keyboard.conf
-git clone https://github.com/wessel-novacustom/clevo-keyboard
+git https://github.com/linuxgamer/clevo-keyboard/blob/master/kb.sh
 cd clevo-keyboard/
 make clean
 cd src
