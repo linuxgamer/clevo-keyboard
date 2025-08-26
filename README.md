@@ -1,3 +1,5 @@
-for personal use.
-some notes: DOESNT WORK on: debian 13, fedora 42 (other distros are untested)
-also it works on gigabyte g5 kd and other rebranded clevo laptops
+For personal use.
+
+Notes: DOESNT WORK on: Debian 13, Fedora 42 (gonna test other distros)
+
+Also it works on gigabyte g5 kd and other "rebranded" clevo laptops
